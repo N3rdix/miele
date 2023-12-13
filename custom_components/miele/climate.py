@@ -28,7 +28,7 @@ from .const import ACTIONS, API, DOMAIN, MANUFACTURER, TARGET_TEMPERATURE
 _LOGGER = logging.getLogger(__name__)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class MieleClimateDescription(ClimateEntityDescription):
     """Class describing Miele climate entities."""
 

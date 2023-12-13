@@ -91,7 +91,7 @@ class MieleNumberDescriptionMixin:
     data_tag: str
 
 
-@dataclass
+@dataclass(kw_only=True)
 class MieleNumberDescription(NumberEntityDescription, MieleNumberDescriptionMixin):
     """Class describing Miele number entities."""
 

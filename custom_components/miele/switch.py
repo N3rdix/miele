@@ -54,7 +54,7 @@ from .const import (
 _LOGGER = logging.getLogger(__name__)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class MieleSwitchDescription(SwitchEntityDescription):
     """Class describing Miele switch entities."""
 

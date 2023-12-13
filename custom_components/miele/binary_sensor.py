@@ -56,7 +56,7 @@ from .const import (
 _LOGGER = logging.getLogger(__name__)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class MieleBinarySensorDescription(BinarySensorEntityDescription):
     """Class describing Miele binary sensor entities."""
 

@@ -47,7 +47,7 @@ SPEED_RANGE = (1, 4)
 FAN_READ_ONLY = [HOB_INDUCT_EXTR]
 
 
-@dataclass
+@dataclass(kw_only=True)
 class MieleFanDescription(FanEntityDescription):
     """Class describing Miele fan entities."""
 

@@ -47,7 +47,7 @@ from .const import (
 _LOGGER = logging.getLogger(__name__)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class MieleButtonDescription(ButtonEntityDescription):
     """Class describing Miele button entities."""
 

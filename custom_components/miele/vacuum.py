@@ -68,7 +68,7 @@ SUPPORTED_FEATURES = (
 )
 
 
-@dataclass
+@dataclass(kw_only=True)
 class MieleVacuumDescription(VacuumEntityDescription):
     """Class describing Miele vacuum entities."""
 
